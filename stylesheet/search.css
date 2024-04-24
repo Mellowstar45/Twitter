@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.center{
+  text-align: center;
+}
+.margintop{
+  margin-top: 15%;
+}
+.hidden3 {
+  visibility: visible;
+}
+@media (min-width: 768px) {
+  .hidden3{
+    visibility: hidden;
+  }
+  .padding-left {
+    padding-left: 13%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hidden4 {
+    visibility: visible;
+  }
+  .pl-11 {
+    padding-left: 11%;
+  }
+  .p-0 {
+    padding: 0;
+  }
+}

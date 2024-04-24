@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: #191919;
+  color: white;
+}
+.dark-mode2 {
+  background-color: black;
+  color: white;
+}
+
+.imgwidth {
+  width: 50%;
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 3%;
+}
+.blop {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: yellow;
+  text-align: center;
+}
+
+.pt-4 {
+  padding-top: 20%;
+}
+
+.items center {
+  display: flex;
+  text-align: center;
+}
+.containt {
+  padding: 0 6px;
+  width: 100%;
+  word-break: break-all;
+}
+img,
+video {
+  border-radius: 10px;
+}
+.hidden6{
+  visibility: visible;
+}
+@media(min-width: 340px){
+  .hidden6 {
+    visibility: hidden;
+  }
+}
+.hidden3 {
+  visibility: visible;
+}
+@media (min-width: 768px) {
+  .hidden3{
+    visibility: hidden;
+  }
+  .padding-left {
+    padding-left: 13%;
+  }
+}
+.mt-10 {
+  margin-top: 250%;
+}
+.hidden4 {
+  visibility: hidden;
+}
+@media (min-width: 1024px) {
+  .hidden4 {
+    visibility: visible;
+  }
+  .hidden5 {
+    visibility: hidden;
+  }
+  .pl-11 {
+    padding-left: 11%;
+  }
+  .p-0 {
+    padding: 0;
+  }
+}
+textarea {
+  width: 80%;
+  padding-right: 5%;
+}
+.label-file {
+  cursor: pointer;
+  color: #00b1ca;
+  font-weight: bold;
+}
+.label-file:hover {
+  color: #25a5c4;
+}
+
+.input-file {
+  display: none;
+}
+
+.bordertweet{
+  border-bottom: solid 2px;
+  border-color: rgba(251 191 36);
+}
+/* ------------------Animation-------------------------------- */
+
+*{
+margin: 0;
+padding: 0;
+}
+section{
+position: relative;
+width: 100%;
+height: 100vh;
+background: #fcd34d;
+overflow: hidden;
+}
+section .air{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+background-size: 1000px 100px
+}
+section .air.air1{
+animation: wave 30s linear infinite;
+z-index: 1000;
+opacity: 1;
+animation-delay: 0s;
+bottom: 0;
+}
+section .air.air2{
+animation: wave2 15s linear infinite;
+z-index: 999;
+opacity: 0.5;
+animation-delay: -5s;
+bottom: 10px;
+}
+section .air.air3{
+animation: wave 30s linear infinite;
+z-index: 998;
+opacity: 0.2;
+animation-delay: -2s;
+bottom: 15px;
+}
+section .air.air4{
+animation: wave2 5s linear infinite;
+z-index: 997;
+opacity: 0.7;
+animation-delay: -5s;
+bottom: 20px;
+}
+@keyframes wave{
+0%{
+background-position-x: 0px;
+}
+100%{
+background-position-x: 1000px;
+}
+}
+@keyframes wave2{
+0%{
+background-position-x: 0px;
+}
+100%{
+background-position-x: -1000px;
+}
+}

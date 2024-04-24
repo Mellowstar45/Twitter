@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.logos{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 2%;
+}
+.blop{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: yellow;
+    text-align: center;
+}
+
+.pt-4{
+    padding-top: 20%;
+}

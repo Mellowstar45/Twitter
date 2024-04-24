@@ -1,0 +1,13 @@
+.blop{
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(252 211 77);;
+  text-align: center;
+}
+
+.pt-4{
+  padding-top: 20%;
+}
